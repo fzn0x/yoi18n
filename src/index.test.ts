@@ -1,7 +1,7 @@
-import reacti18n from '../dist'
+import fasti18n from '../dist'
 
 describe('init', () => {
-  const t = reacti18n.init({
+  const t = fasti18n.init({
     namespace: {
       default: {
         load: './lang.json',

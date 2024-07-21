@@ -2,15 +2,15 @@
 
 <hr />
 
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/fzn0x/reacti18n/ci.yml?branch=main)](https://github.com/fzn0x/reacti18n/actions)
-[![GitHub](https://img.shields.io/github/license/fzn0x/reacti18n)](https://github.com/fzn0x/reacti18n/blob/main/LICENSE)
-[![npm](https://img.shields.io/npm/v/reacti18n)](https://www.npmjs.com/package/reacti18n)
-[![npm](https://img.shields.io/npm/dm/reacti18n)](https://www.npmjs.com/package/reacti18n)
-[![JSR](https://jsr.io/badges/@fzn0x/reacti18n)](https://jsr.io/@fzn0x/reacti18n)
-[![Bundle Size](https://img.shields.io/bundlephobia/min/reacti18n)](https://bundlephobia.com/result?p=reacti18n)
-[![Bundle Size](https://img.shields.io/bundlephobia/minzip/reacti18n)](https://bundlephobia.com/result?p=reacti18n)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/fzn0x/reacti18n)](https://github.com/fzn0x/reacti18n/pulse)
-[![GitHub last commit](https://img.shields.io/github/last-commit/fzn0x/reacti18n)](https://github.com/fzn0x/reacti18n/commits/main)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/fzn0x/fasti18n/ci.yml?branch=main)](https://github.com/fzn0x/fasti18n/actions)
+[![GitHub](https://img.shields.io/github/license/fzn0x/fasti18n)](https://github.com/fzn0x/fasti18n/blob/main/LICENSE)
+[![npm](https://img.shields.io/npm/v/fasti18n)](https://www.npmjs.com/package/fasti18n)
+[![npm](https://img.shields.io/npm/dm/fasti18n)](https://www.npmjs.com/package/fasti18n)
+[![JSR](https://jsr.io/badges/@fzn0x/fasti18n)](https://jsr.io/@fzn0x/fasti18n)
+[![Bundle Size](https://img.shields.io/bundlephobia/min/fasti18n)](https://bundlephobia.com/result?p=fasti18n)
+[![Bundle Size](https://img.shields.io/bundlephobia/minzip/fasti18n)](https://bundlephobia.com/result?p=fasti18n)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/fzn0x/fasti18n)](https://github.com/fzn0x/fasti18n/pulse)
+[![GitHub last commit](https://img.shields.io/github/last-commit/fzn0x/fasti18n)](https://github.com/fzn0x/fasti18n/commits/main)
 
 <hr />
 
@@ -28,10 +28,10 @@
 ## Installation
 
 ```bash
-bun install reacti18n
-npm install reacti18n
-yarn add reacti18n
-pnpm install reacti18n
+bun install fasti18n
+npm install fasti18n
+yarn add fasti18n
+pnpm install fasti18n
 ```
 
 ## Usage
@@ -74,7 +74,7 @@ Creates `lang.json` and `lang-admin.json` files:
 
 ```js
 // lang.js
-const i18n = require('reacti18n')
+const i18n = require('fasti18n')
 
 const t = i18n.init({
   namespace: {
@@ -120,7 +120,7 @@ console.log(t('admin.hello')) // "hello" from admin namespace,
 
 ```js
 // lang.ts
-import i18n from 'reacti18n'
+import i18n from 'fasti18n'
 
 const t = i18n.init({
   namespace: {
@@ -157,7 +157,7 @@ console.log(t('admin.hello')) // "hello" from admin namespace,
 ### React
 
 ```jsx
-import i18n from 'reacti18n'
+import i18n from 'fasti18n'
 
 const t = i18n.init({
   namespace: {
@@ -196,4 +196,4 @@ export default function LanguageSwitch({ lang, ns }) {
 
 ## License
 
-Reacti18n is [MIT Licensed](./LICENSE) and Open Source Software by [@fzn0x](https://github.com/fzn0x)
+fasti18n is [MIT Licensed](./LICENSE) and Open Source Software by [@fzn0x](https://github.com/fzn0x)

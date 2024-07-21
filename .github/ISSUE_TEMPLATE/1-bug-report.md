@@ -25,4 +25,4 @@ about: Something is not working as it should
 
 - [ ] I'm willing to submit a pull request
 - [ ] I have read the documentation.
-- [ ] I have tried my code with the latest version of npm and [reacti18n](https://github.com/fzn0x/reacti18n).
+- [ ] I have tried my code with the latest version of npm and [fasti18n](https://github.com/fzn0x/fasti18n).
