@@ -1,7 +1,7 @@
-import fasti18n from '../dist'
+import yoi18n from '../dist'
 
 describe('init', () => {
-  const t = fasti18n.init({
+  const t = yoi18n.init({
     namespace: {
       default: {
         load: './lang.json',
