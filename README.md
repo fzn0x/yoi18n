@@ -1,6 +1,20 @@
 # 𝓡𝓮𝓪𝓬𝓽i18𝓷
 
-Straightforward & less effort React i18n library.
+<hr />
+
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/fzn0x/reacti18n/ci.yml?branch=main)](https://github.com/fzn0x/reacti18n/actions)
+[![GitHub](https://img.shields.io/github/license/fzn0x/reacti18n)](https://github.com/fzn0x/reacti18n/blob/main/LICENSE)
+[![npm](https://img.shields.io/npm/v/reacti18n)](https://www.npmjs.com/package/reacti18n)
+[![npm](https://img.shields.io/npm/dm/reacti18n)](https://www.npmjs.com/package/reacti18n)
+[![JSR](https://jsr.io/badges/@fzn0x/reacti18n)](https://jsr.io/@fzn0x/reacti18n)
+[![Bundle Size](https://img.shields.io/bundlephobia/min/reacti18n)](https://bundlephobia.com/result?p=reacti18n)
+[![Bundle Size](https://img.shields.io/bundlephobia/minzip/reacti18n)](https://bundlephobia.com/result?p=reacti18n)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/fzn0x/reacti18n)](https://github.com/fzn0x/reacti18n/pulse)
+[![GitHub last commit](https://img.shields.io/github/last-commit/fzn0x/reacti18n)](https://github.com/fzn0x/reacti18n/commits/main)
+
+<hr />
+
+⚡Straightforward & less effort React i18n library.
 
 ## Get to Know
 
