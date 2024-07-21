@@ -1,6 +1,6 @@
 {
   "name": "yoi18n",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Straightforward & less effort React i18n library.",
   "main": "./dist/index.js",
   "repository": {
