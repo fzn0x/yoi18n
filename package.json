@@ -37,7 +37,7 @@
     "format": "prettier --check --cache \"src/**/*.{js,ts,tsx}\"",
     "lint": "eslint --ext js,ts,tsx src",
     "lint:fix": "eslint --ext js,ts,tsx src --fix",
-    "copy:package.cjs.json": "cp ./package.cjs.json ./dist/cjs/package.json && cp ./package.cjs.json ./dist/types/package.json ",
+    "copy:package.cjs.json": "cp ./package.cjs.json ./dist/cjs/package.json",
     "vitest:watch": "vitest --watch",
     "test": "vitest",
     "build": "rimraf dist && tsx ./build.ts && bun run copy:package.cjs.json && webpack",
