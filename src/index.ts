@@ -7,7 +7,9 @@ function readFile(filePath: string): string {
 
 function parseCookies(cookieHeader: string | undefined): Record<string, string> {
   const cookies: Record<string, string> = {}
-  if (!cookieHeader) return cookies
+  if (!cookieHeader) {
+    return cookies
+  }
 
   cookieHeader.split(';').forEach((cookie) => {
     const [name, ...rest] = cookie.split('=')
@@ -21,7 +23,9 @@ function parseCookies(cookieHeader: string | undefined): Record<string, string> 
 
 function parseQueryString(queryString: string): Record<string, string> {
   const query: Record<string, string> = {}
-  if (!queryString) return query
+  if (!queryString) {
+    return query
+  }
 
   queryString
     .replace(/^\?/, '')
@@ -36,7 +40,7 @@ function parseQueryString(queryString: string): Record<string, string> {
   return query
 }
 
-function loadJSON(filePath: string): Promise<Record<string, any>> {
+function loadJSON(filePath: string): Promise<Record<string, unknown>> {
   return JSON.parse(readFile(filePath))
 }
 
@@ -94,12 +98,16 @@ function detectLanguage(detectionConfig: I18nConfig['detection']) {
 }
 
 function i18nInit(config: I18nConfig) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const languages: Record<string, any> = {}
   for (const ns in config.namespace) {
     const namespaceConfig = config.namespace[ns]
 
-    if (namespaceConfig) languages[ns] = loadJSON(namespaceConfig.load)
-    else throw new Error('Invalid namespace configuration')
+    if (namespaceConfig) {
+      languages[ns] = loadJSON(namespaceConfig.load)
+    } else {
+      throw new Error('Invalid namespace configuration')
+    }
   }
 
   const detectLang = detectLanguage(config.detection)
