@@ -97,7 +97,12 @@ function detectLanguage(detectionConfig: I18nConfig['detection']) {
   }
 }
 
-function i18nInit(config: I18nConfig) {
+interface TranslateFunction {
+  (key: string, req?: { headers: { cookie?: string }; url: string }): string
+  switch: (newLang: string, ns: string) => void
+}
+
+function i18nInit(config: I18nConfig): TranslateFunction {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const languages: Record<string, any> = {}
   for (const ns in config.namespace) {
