@@ -1,0 +1,75 @@
+{
+  "name": "reacti18n",
+  "version": "0.0.1",
+  "description": "Straightforward & less effort React i18n library.",
+  "main": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fzn0x/reacti18n.git"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "browser",
+    "dist",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
+  "author": {
+    "name": "Muhammad Fauzan",
+    "email": "developerfauzan@gmail.com",
+    "url": "https://fzn0x.dev/"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "format:fix": "prettier --check --cache --write \"src/**/*.{js,ts,tsx}\"",
+    "format": "prettier --check --cache \"src/**/*.{js,ts,tsx}\"",
+    "lint": "eslint --ext js,ts,tsx src",
+    "lint:fix": "eslint --ext js,ts,tsx src --fix",
+    "copy:package.cjs.json": "cp ./package.cjs.json ./dist/cjs/package.json && cp ./package.cjs.json ./dist/types/package.json ",
+    "vitest:watch": "vitest --watch",
+    "test": "vitest",
+    "build": "rimraf dist && tsx ./build.ts && bun run copy:package.cjs.json && webpack",
+    "watch": "rimraf dist && tsx ./build.ts --watch && bun run copy:package.cjs.json",
+    "postbuild": "publint",
+    "release": "np",
+    "test:build": "bun run build && bun run test"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^20.14.4",
+    "arg": "^5.0.2",
+    "esbuild": "^0.15.12",
+    "esbuild-register": "^3.5.0",
+    "eslint": "8.55.0",
+    "glob": "^10.4.1",
+    "np": "^10.0.5",
+    "prettier": "^3.3.3",
+    "publint": "^0.2.8",
+    "rimraf": "^5.0.5",
+    "ts-loader": "^9.5.1",
+    "tsx": "^4.15.6",
+    "typescript": "5.3.3",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "vitest": "^1.6.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
