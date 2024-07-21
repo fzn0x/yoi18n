@@ -71,5 +71,16 @@
   "license": "MIT",
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "keywords": [
+    "react",
+    "i18n",
+    "internationalization",
+    "localization",
+    "react-i18n",
+    "translations",
+    "multi-language",
+    "react-library",
+    "typescript"
+  ]
 }
