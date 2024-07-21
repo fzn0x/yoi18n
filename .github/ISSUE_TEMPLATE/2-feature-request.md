@@ -1,6 +1,6 @@
 ---
 name: '⭐ Feature request'
-about: Suggest a feature for fasti18n
+about: Suggest a feature for yoi18n
 ---
 
 #### What feature are you want to add?
