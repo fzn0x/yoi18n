@@ -81,12 +81,12 @@ const t = i18n.init({
     default: {
       // user pages
       load: `/lang.json`,
-      type: 'json',
+      defaultLang: 'en',
     },
     admin: {
       // admin pages
       load: `/lang-admin.json`,
-      type: 'json',
+      defaultLang: 'en',
     },
   },
   detection: {
@@ -113,12 +113,12 @@ const t = i18n.init({
     default: {
       // user pages
       load: `/lang.json`,
-      type: 'json',
+      defaultLang: 'en',
     },
     admin: {
       // admin pages
       load: `/lang-admin.json`,
-      type: 'json',
+      defaultLang: 'en',
     },
   },
   detection: {
@@ -144,12 +144,12 @@ const t = i18n.init({
     default: {
       // user pages
       load: `/lang.json`,
-      type: 'json',
+      defaultLang: 'en',
     },
     admin: {
       // admin pages
       load: `/lang-admin.json`,
-      type: 'json',
+      defaultLang: 'en',
     },
   },
   detection: {
