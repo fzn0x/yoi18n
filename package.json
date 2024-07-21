@@ -1,6 +1,6 @@
 {
   "name": "reacti18n",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Straightforward & less effort React i18n library.",
   "main": "./dist/index.js",
   "repository": {
