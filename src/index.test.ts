@@ -5,14 +5,10 @@ describe('init', () => {
     namespace: {
       default: {
         load: './lang.json',
-        type: 'json',
-        storage: 'cookie',
         defaultLang: 'en',
       },
       admin: {
         load: './lang-admin.json',
-        type: 'json',
-        storage: 'cookie',
         defaultLang: 'en',
       },
     },
