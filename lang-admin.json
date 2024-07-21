@@ -1,0 +1,8 @@
+{
+  "en": {
+    "hello": "hello world from admin"
+  },
+  "de": {
+    "hello": "Guten morgen from admin"
+  }
+}
