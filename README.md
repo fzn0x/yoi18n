@@ -27,7 +27,7 @@
 
 ## Installation
 
-```sh
+```bash
 bun install reacti18n
 npm install reacti18n
 yarn add reacti18n
