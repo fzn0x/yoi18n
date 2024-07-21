@@ -49,8 +49,6 @@ interface I18nConfig {
     string,
     {
       load: string
-      type?: string
-      storage?: string
       defaultLang: string
     }
   >
