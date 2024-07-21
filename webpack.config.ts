@@ -7,12 +7,12 @@ module.exports = /** @type { import('webpack').Configuration } */ {
   devtool: 'source-map',
   output: {
     library: {
-      name: 'reacti18n',
+      name: 'fasti18n',
       type: 'umd',
       umdNamedDefine: true,
     },
     path: path.resolve(__dirname, 'browser'),
-    filename: 'reacti18n-browser.min.js',
+    filename: 'fasti18n-browser.min.js',
   },
   externals: {
     'node:fs': '{}',

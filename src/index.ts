@@ -51,7 +51,7 @@ interface I18nConfig {
       load: string
       type?: string
       storage?: string
-      defaultLang?: string
+      defaultLang: string
     }
   >
   detection: {
@@ -134,11 +134,17 @@ function i18nInit(config: I18nConfig): TranslateFunction {
   }
 
   t.switch = (newLang: string, ns: string) => {
+    if (!config) {
+      throw new Error('Config is undefined')
+    }
+
     config.detection.defaultLang = newLang
 
     if (ns) {
-      if (config.namespace[ns]) {
-        config.namespace[ns].defaultLang = newLang
+      const namespace = config.namespace?.[ns]
+
+      if (namespace) {
+        namespace.defaultLang = newLang
       } else {
         throw new Error(`Namespace ${ns} not found`)
       }

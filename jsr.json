@@ -1,5 +1,5 @@
 {
-  "name": "@fzn0x/reacti18n",
+  "name": "@fzn0x/fasti18n",
   "version": "0.0.0",
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "deno.ns"]

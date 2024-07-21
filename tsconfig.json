@@ -32,7 +32,7 @@
     "declarationMap": true,
     "types": ["vitest/globals"],
     "paths": {
-      "reacti18n": ["dist"],
+      "fasti18n": ["dist"],
       "*": ["*", "utils/*"]
     }
   },

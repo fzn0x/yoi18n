@@ -1,11 +1,11 @@
 {
-  "name": "reacti18n",
-  "version": "0.0.1",
+  "name": "fasti18n",
+  "version": "0.0.0",
   "description": "Straightforward & less effort React i18n library.",
   "main": "./dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fzn0x/reacti18n.git"
+    "url": "https://github.com/fzn0x/fasti18n.git"
   },
   "type": "module",
   "sideEffects": false,
