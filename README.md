@@ -81,21 +81,13 @@ const t = i18n.init({
     default: {
       // user pages
       load: `/lang.json`,
-      // supported: [`lang.json`, `lang-2.json`]
-      type: 'json', // json, sqlite
-      storage: 'path',
+      type: 'json',
     },
     admin: {
       // admin pages
       load: `/lang-admin.json`,
-      // supported: [`lang-admin.json`, `lang-admin-2.json`]
       type: 'json',
-      storage: 'cookie',
     },
-    // otherCustomNamespace: {
-    //     load: `/lang.db`,
-    //     type: 'sqlite', // json, sqlite
-    // }
   },
   detection: {
     order: ['cookie', 'path', 'query'], // use defaultLang if not found
@@ -121,19 +113,13 @@ const t = i18n.init({
     default: {
       // user pages
       load: `/lang.json`,
-      type: 'json', // json, sqlite
-      storage: 'path',
+      type: 'json',
     },
     admin: {
       // admin pages
       load: `/lang-admin.json`,
       type: 'json',
-      storage: 'cookie',
     },
-    // otherCustomNamespace: {
-    //     load: `/lang.db`,
-    //     type: 'sqlite', // json, sqlite
-    // }
   },
   detection: {
     order: ['cookie', 'path', 'query'], // use defaultLang if not found
@@ -158,19 +144,13 @@ const t = i18n.init({
     default: {
       // user pages
       load: `/lang.json`,
-      type: 'json', // json, sqlite
-      storage: 'path',
+      type: 'json',
     },
     admin: {
       // admin pages
       load: `/lang-admin.json`,
       type: 'json',
-      storage: 'cookie',
     },
-    // otherCustomNamespace: {
-    //     load: `/lang.db`,
-    //     type: 'sqlite', // json, sqlite
-    // }
   },
   detection: {
     order: ['cookie', 'path', 'query'], // use defaultLang if not found
