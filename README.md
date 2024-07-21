@@ -80,14 +80,14 @@ const t = i18n.init({
   namespace: {
     default: {
       // user pages
-      load: `/lang.json`, // multiple files loads also
+      load: `/lang.json`,
       // supported: [`lang.json`, `lang-2.json`]
       type: 'json', // json, sqlite
       storage: 'path',
     },
     admin: {
       // admin pages
-      load: `/lang-admin.json`, // multiple files loads also
+      load: `/lang-admin.json`,
       // supported: [`lang-admin.json`, `lang-admin-2.json`]
       type: 'json',
       storage: 'cookie',
@@ -105,12 +105,6 @@ const t = i18n.init({
 
 console.log(t('hello')) // "hello" from default namespace
 console.log(t('admin.hello')) // "hello" from admin namespace,
-// defaultLang: en if no language detected in cookie, path or query
-// for path: url must includes /en/ path or similar lang names like /de/ path to be recognized
-// for query: url must includes query params `?lang=en` to work,
-// or other similar lang names like `?lang=de` or `?lang=id` to work.
-// for cookie: you need to store cookie with name `lang` and with the value of current lang
-// name, for example: en, de, id
 
 // You can export for reusability
 // module.exports = t;
