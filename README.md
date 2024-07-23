@@ -1,5 +1,8 @@
 # yoi18n
 
+> [!WARNING]
+> This package is still a work in progress.
+
 <hr />
 
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/fzn0x/yoi18n/ci.yml?branch=main)](https://github.com/fzn0x/yoi18n/actions)
